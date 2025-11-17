@@ -1,0 +1,213 @@
+Script started on 2025-11-14 12:44:58+02:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="113" LINES="30"]
+[?2004h]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ exitnano package.json [3PREADME.md[C[4Ppm run devano package.json [7Ppm run devano package.json pm run dev -- --VITE_BACKEND_URL=localhost/3000[4PVITE_BACKEND_URL=localhost/3000 vitedev -- --VITE_BACKEND_URL=localhost/3000[30Pano package.json [7Ppm run devano package.json [7Ppm run devano README.md [3@package.json[Cexit[K[K[7mdocker exec -it todo-backend-mongo-1 bash[27mdocker exec -it todo-backend-mongo-1 bash
+[?2004l[?2004hroot@bbcca0ad8d02:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6917084b74769445179dc29c
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.9[0m
+Using MongoDB:		undefined
+[1m[33mUsing Mongosh[0m:		2.5.9
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1G[0Jtest> [7Guse admin
+switched to db admin
+[1G[0Jadmin> [8Gdb.auth(/[1G[0Jadmin> db.auth([16G[32m"[39m[32ma[39m[32md[39m[1G[0Jadmin> db.auth([32m"a[39m[18G[1G[0Jadmin> db.auth([32m"[39m[17G[32mr[39m[32mo[39m[32mo[39m[32mt[39m[32m"[39m, passwordPrompt())
+Enter password
+*******{ ok: [33m1[39m }
+[1G[0Jadmin> [8Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jadmin> [8Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29d'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29e'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne(<document[36mdocument[39m>, { text[33mtext[39m: [32m'[39m[32mi[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32ml[39m[32me[39m[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool bl[39m[97G[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool b[39m[96G[32me[39m[32ml[39m[32mt[39m[32m'[39m[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [44m[32m'[49mincrease the number of tools in my tool belt'[39m[99G[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[98G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt[44m'[39m[49m[54G[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[53G[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[46G[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>,{ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[45G[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>{ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[44G[1G[0Jthe_database> db.todos.insertOne(<document{ text: 'increase the number of tools in my tool belt'[43G[1G[0Jthe_database> db.todos.insertOne(<documen{ text: 'increase the number of tools in my tool belt'[42G[1G[0Jthe_database> db.todos.insertOne(<docume{ text: 'increase the number of tools in my tool belt'[41G[1G[0Jthe_database> db.todos.insertOne(<docum{ text: 'increase the number of tools in my tool belt'[40G[1G[0Jthe_database> db.todos.insertOne(<docu{ text: 'increase the number of tools in my tool belt'[39G[1G[0Jthe_database> db.todos.insertOne(<doc{ text: 'increase the number of tools in my tool belt'[38G[1G[0Jthe_database> db.todos.insertOne(<do{ text: 'increase the number of tools in my tool belt'[37G[1G[0Jthe_database> db.todos.insertOne(<d{ text: 'increase the number of tools in my tool belt'[36G[1G[0Jthe_database> db.todos.insertOne(<{ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[35G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[34G[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[35G[1C[1C[1C[1C[1C[1C[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt[44m'[39m[49m[42G[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[43G[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m'[49mincrease the number of tools in my tool belt'[39m[87G[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[88G [1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[88G, d[36mdo[39mdone: fals[33mfalse[39m})
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'691708db74769445179dc29d'[39m)
+}
+[1G[0Jthe_database> [15Gdb.tosod[1G[0Jthe_database> db.toso[22G[1G[0Jthe_database> db.tos[21G[1G[0Jthe_database> db.to[20Gdos.find({})
+[
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29d'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29e'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'691708db74769445179dc29d'[39m),
+    text: [32m'increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004l[?2004hroot@bbcca0ad8d02:/# exit
+[?2004lexit
+[?2004h]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ cat 
+.git/           script-answers/ todo-app/       
+]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ cat sci[Kript-answers/
+.gitkeep          exercise12_1.txt  exercise12_2.txt  exercise12_3.txt  exercise12_4.txt  exercise12_8.txt
+]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ cat script-answers/exercise12_8.txt 
+[?2004lScript started on 2025-11-14 12:44:58+02:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="113" LINES="30"]
+[?2004h]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ exitnano package.json [3PREADME.md[C[4Ppm run devano package.json [7Ppm run devano package.json pm run dev -- --VITE_BACKEND_URL=localhost/3000[4PVITE_BACKEND_URL=localhost/3000 vitedev -- --VITE_BACKEND_URL=localhost/3000[30Pano package.json [7Ppm run devano package.json [7Ppm run devano README.md [3@package.json[Cexit[K[K[7mdocker exec -it todo-backend-mongo-1 bash[27mdocker exec -it todo-backend-mongo-1 bash
+[?2004l[?2004hroot@bbcca0ad8d02:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6917084b74769445179dc29c
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.9[0m
+Using MongoDB:		undefined
+[1m[33mUsing Mongosh[0m:		2.5.9
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1G[0Jtest> [7Guse admin
+switched to db admin
+[1G[0Jadmin> [8Gdb.auth(/[1G[0Jadmin> db.auth([16G[32m"[39m[32ma[39m[32md[39m[1G[0Jadmin> db.auth([32m"a[39m[18G[1G[0Jadmin> db.auth([32m"[39m[17G[32mr[39m[32mo[39m[32mo[39m[32mt[39m[32m"[39m, passwordPrompt())
+Enter password
+*******{ ok: [33m1[39m }
+[1G[0Jadmin> [8Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jadmin> [8Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29d'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29e'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne(<document[36mdocument[39m>, { text[33mtext[39m: [32m'[39m[32mi[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32ml[39m[32me[39m[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool bl[39m[97G[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool b[39m[96G[32me[39m[32ml[39m[32mt[39m[32m'[39m[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [44m[32m'[49mincrease the number of tools in my tool belt'[39m[99G[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[98G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt[44m'[39m[49m[54G[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[53G[?2004h]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ cat script-answers/exercise12_8.txt docker exec -it todo-backend-mongo-1 bashexit[Knano package.json [3PREADME.md[C[4Ppm run devano README.md [3@package.json[Cexit[Kdocker exec -it todo-backend-mongo-1 bash[5Pcat script-answers/exercise12_8.txt [K^C[?2004l[?2004h[?2004l
+[?2004h]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ cat script-answers/exercise12_8.txt 
+[?2004lScript started on 2025-11-14 12:44:58+02:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="113" LINES="30"]
+[?2004h]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ exitnano package.json [3PREADME.md[C[4Ppm run devano package.json [7Ppm run devano package.json pm run dev -- --VITE_BACKEND_URL=localhost/3000[4PVITE_BACKEND_URL=localhost/3000 vitedev -- --VITE_BACKEND_URL=localhost/3000[30Pano package.json [7Ppm run devano package.json [7Ppm run devano README.md [3@package.json[Cexit[K[K[7mdocker exec -it todo-backend-mongo-1 bash[27mdocker exec -it todo-backend-mongo-1 bash
+[?2004l[?2004hroot@bbcca0ad8d02:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6917084b74769445179dc29c
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.9[0m
+Using MongoDB:		undefined
+[1m[33mUsing Mongosh[0m:		2.5.9
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1G[0Jtest> [7Guse admin
+switched to db admin
+[1G[0Jadmin> [8Gdb.auth(/[1G[0Jadmin> db.auth([16G[32m"[39m[32ma[39m[32md[39m[1G[0Jadmin> db.auth([32m"a[39m[18G[1G[0Jadmin> db.auth([32m"[39m[17G[32mr[39m[32mo[39m[32mo[39m[32mt[39m[32m"[39m, passwordPrompt())
+Enter password
+*******{ ok: [33m1[39m }
+[1G[0Jadmin> [8Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jadmin> [8Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29d'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29e'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne(<document[36mdocument[39m>, { text[33mtext[39m: [32m'[39m[32mi[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32ml[39m[32me[39m[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool bl[39m[97G[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool b[39m[96G[32me[39m[32ml[39m[32mt[39m[32m'[39m[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [44m[32m'[49mincrease the number of tools in my tool belt'[39m[99G[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[98G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt[44m'[39m[49m[54G[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[53G[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[46G[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>,{ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[45G[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>{ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[44G[1G[0Jthe_database> db.todos.insertOne(<document{ text: 'increase the number of tools in my tool belt'[43G[1G[0Jthe_database> db.todos.insertOne(<documen{ text: 'increase the number of tools in my tool belt'[42G[1G[0Jthe_database> db.todos.insertOne(<docume{ text: 'increase the number of tools in my tool belt'[41G[1G[0Jthe_database> db.todos.insertOne(<docum{ text: 'increase the number of tools in my tool belt'[40G[1G[0Jthe_database> db.todos.insertOne(<docu{ text: 'increase the number of tools in my tool belt'[39G[1G[0Jthe_database> db.todos.insertOne(<doc{ text: 'increase the number of tools in my tool belt'[38G[1G[0Jthe_database> db.todos.insertOne(<do{ text: 'increase the number of tools in my tool belt'[37G[1G[0Jthe_database> db.todos.insertOne(<d{ text: 'increase the number of tools in my tool belt'[36G[1G[0Jthe_database> db.todos.insertOne(<{ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[35G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[34G[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[35G[1C[1C[1C[1C[1C[1C[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt[44m'[39m[49m[42G[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[43G[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m'[49mincrease the number of tools in my tool belt'[39m[87G[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[88G [1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'increase the number of tools in my tool belt'[39m[88G, d[36mdo[39mdone: fals[33mfalse[39m})
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'691708db74769445179dc29d'[39m)
+}
+[1G[0Jthe_database> [15Gdb.tosod[1G[0Jthe_database> db.toso[22G[1G[0Jthe_database> db.tos[21G[1G[0Jthe_database> db.to[20Gdos.find({})
+[
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29d'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29e'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'691708db74769445179dc29d'[39m),
+    text: [32m'increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004l[?2004hroot@bbcca0ad8d02:/# exit
+[?2004lexit
+[?2004h]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ cat 
+.git/           script-answers/ todo-app/       
+]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ cat sci[Kript-answers/
+.gitkeep          exercise12_1.txt  exercise12_2.txt  exercise12_3.txt  exercise12_4.txt  exercise12_8.txt
+]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ cat script-answers/exercise12_8.txt 
+[?2004lScript started on 2025-11-14 12:44:58+02:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="113" LINES="30"]
+[?2004h]0;haisuli@desktop: ~/projects/part12-containers-applications[01;32mhaisuli@desktop[00m:[01;34m~/projects/part12-containers-applications[00m$ exitnano package.json [3PREADME.md[C[4Ppm run devano package.json [7Ppm run devano package.json pm run dev -- --VITE_BACKEND_URL=localhost/3000[4PVITE_BACKEND_URL=localhost/3000 vitedev -- --VITE_BACKEND_URL=localhost/3000[30Pano package.json [7Ppm run devano package.json [7Ppm run devano README.md [3@package.json[Cexit[K[K[7mdocker exec -it todo-backend-mongo-1 bash[27mdocker exec -it todo-backend-mongo-1 bash
+[?2004l[?2004hroot@bbcca0ad8d02:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6917084b74769445179dc29c
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.9[0m
+Using MongoDB:		undefined
+[1m[33mUsing Mongosh[0m:		2.5.9
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1G[0Jtest> [7Guse admin
+switched to db admin
+[1G[0Jadmin> [8Gdb.auth(/[1G[0Jadmin> db.auth([16G[32m"[39m[32ma[39m[32md[39m[1G[0Jadmin> db.auth([32m"a[39m[18G[1G[0Jadmin> db.auth([32m"[39m[17G[32mr[39m[32mo[39m[32mo[39m[32mt[39m[32m"[39m, passwordPrompt())
+Enter password
+*******{ ok: [33m1[39m }
+[1G[0Jadmin> [8Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jadmin> [8Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29d'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'691700dc050f89e5089dc29e'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne(<document[36mdocument[39m>, { text[33mtext[39m: [32m'[39m[32mi[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32ml[39m[32me[39m[1G[0Jthe_database> db.todos.insertOne(<[36mdocument[39m>, { [33mtext[39m: [32m'increase the number of tools in my tool bl[39m[97G[1G[0Jthe_database> db.todos.insertOne(<[3
