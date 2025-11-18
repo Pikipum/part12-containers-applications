@@ -1,15 +1,12 @@
-FROM node:20
-
-ENV DEBUG=playground:* VITE_BACKEND_URL=http://localhost:3000
-
+FROM node:20 AS build
 WORKDIR /usr/src/app
-
-COPY . .
-
+ENV VITE_BACKEND_URL=/api
+COPY package*.json ./
 RUN npm ci
-
+COPY . .
 RUN npm run build
 
-RUN npm install -g serve
-
-CMD ["serve", "dist"]
+FROM nginx
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

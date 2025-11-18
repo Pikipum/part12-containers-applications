@@ -23,10 +23,6 @@ router.post("/", async (req, res) => {
   res.send(todo);
 });
 
-router.get("/statistics", async (req, res) => {
-  const added = await getAsync("added_todos");
-  res.send({ added_todos: parseInt(added || "0", 10) });
-});
 
 const singleRouter = express.Router();
 
